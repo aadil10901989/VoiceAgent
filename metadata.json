@@ -1,0 +1,7 @@
+{
+  "name": "Pak Consulate Jeddah - AI Voice Assistant",
+  "description": "A multilingual AI voice assistant for the Pakistan Consulate General in Jeddah, providing information on passport, NADRA, visa, and welfare services in English, Arabic, and Urdu.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

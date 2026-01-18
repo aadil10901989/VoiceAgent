@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pakistan Consulate Jeddah AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Arabic:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --pak-green: #006600;
+            --emerald-light: #10b981;
+            --gold-accent: #D4AF37;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #002200;
+            margin: 0;
+            overflow-x: hidden;
+            color: white;
+        }
+        .arabic-font {
+            font-family: 'Noto Sans Arabic', sans-serif;
+        }
+        .urdu-font {
+            font-family: 'Noto Sans Arabic', sans-serif;
+        }
+
+        /* 3D Background & Heritage Layers */
+        .bg-fixed-layer {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -2;
+            background: linear-gradient(180deg, #003300 0%, #001100 100%);
+        }
+
+        .heritage-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.15;
+            pointer-events: none;
+            overflow: hidden;
+        }
+
+        .heritage-img {
+            position: absolute;
+            width: 40%;
+            border-radius: 20px;
+            filter: grayscale(100%) contrast(120%);
+            mix-blend-mode: overlay;
+            animation: float-slow 30s infinite alternate ease-in-out;
+        }
+
+        @keyframes float-slow {
+            0% { transform: translateY(0) scale(1); }
+            100% { transform: translateY(-50px) scale(1.05); }
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.4);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .glass-card:hover {
+            transform: translateY(-10px) scale(1.01);
+            box-shadow: 0 45px 80px -20px rgba(0, 0, 0, 0.5);
+        }
+
+        .leadership-card {
+            background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(240,240,240,1) 100%);
+            border-bottom: 4px solid var(--gold-accent);
+        }
+
+        .hero-text-shadow {
+            text-shadow: 0 8px 24px rgba(0,0,0,0.6);
+        }
+
+        .gold-border {
+            border: 2px solid var(--gold-accent);
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #001a00;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--pak-green);
+            border-radius: 10px;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://esm.sh/@google/genai@^1.37.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
